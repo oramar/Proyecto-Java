@@ -101,7 +101,9 @@ public class ArrayEjercicios {
 ## checlist ##
 
 * [x] Tarea 1
-
+* [x] Tarea 2
+* [ ] Tarea 3
+* [ ] Tarea 4
 # Para Indicar los Imojis
 
 [Emojis de GitHub](https://gist.github.com/rxaviers/7360908)
