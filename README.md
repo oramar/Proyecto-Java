@@ -1,5 +1,5 @@
 # Proyecto-Java
-Todo los ejercicios del curso de java, del canal pildoras informaticas
+Estamos aprendiendo **Java** haciendo Todo los ejercicios del curso de java, del canal **pildoras informaticas**
 * [x] tarea 1
 * [x] tarea 2
 * [ ] tarea 3
