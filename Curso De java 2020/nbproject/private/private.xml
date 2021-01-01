@@ -4,8 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
 
-            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/componentesSwing/ComboBoxDespegable.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/multiplesFuentesOyentes/MultiplesFuentes.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/componentesSwing/EjemploRadioButton.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/componentesSwing/BotonesRadioButton.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/componentesSwing/CuadroTexto.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/componentesSwing/EjemploAreaTexto.java</file>
             <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/eventosFocus/FocusVentana.java</file>
+            <file>file:/D:/Proyecto-Java/Curso%20De%20java%202020/src/eventos/ControlandoEventoVentana.java</file>
 
         </group>
     </open-files>
