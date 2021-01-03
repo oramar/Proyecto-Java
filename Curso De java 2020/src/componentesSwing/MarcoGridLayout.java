@@ -17,7 +17,7 @@ public class MarcoGridLayout {
         //LaminaBorderLayout lamina2 = new LaminaBorderLayout();        
         marco.add(lamina);
         //marco.add(lamina2,BorderLayout.CENTER);
-        marco.anchoAlto(25, 30);
+        marco.anchoAlto(50, 50);
         marco.crearFormulario("Dispocisiones GridLayout");
     }
 }
