@@ -9,7 +9,9 @@ import javax.swing.JFrame;
 public class MarcoCentrado extends JFrame {
 
     private int ancho;
-    private int alto;    
+    private int alto; 
+    private int posicionAncho;
+    private int posicionAlto;
     //Con toolkit y el metodo getDefaulToolkit() obtenemos acceso a nuestro sistema huespede
     Toolkit miPantalla = Toolkit.getDefaultToolkit();
     Dimension tamanoPantalla = miPantalla.getScreenSize();
@@ -22,13 +24,13 @@ public class MarcoCentrado extends JFrame {
     }
 
     public void anchoAlto(int ancho, int alto) {
-        //me da la resolucion en pixeles
+
         this.ancho = tamanoPantalla.width;
         this.alto = tamanoPantalla.height;
-
-        //obtengo el ancho y alto formulario en pixels
         double anchoDecimal = (double) this.ancho / 100 * ancho;
         double altoDecimal = (double) this.alto / 100 * alto;
+        this.posicionAncho = (int) ((this.ancho - anchoDecimal) / 2);
+        this.posicionAlto = (int) ((this.alto - altoDecimal) / 2);
 
         this.alto = (int) altoDecimal;
         this.ancho = (int) anchoDecimal;
@@ -36,21 +38,16 @@ public class MarcoCentrado extends JFrame {
     }
 
     public void crearFormulario(String Titulo) {
-        setVisible(true);        
-        //setBounds(posicionAncho,posicionAlto,ancho,alto);
+
+        setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle(Titulo);
         setResizable(false);
-        setSize(ancho, alto);
-        setLocationRelativeTo(null);
+        setBounds(posicionAncho, posicionAlto, ancho, alto);
+        //Otra forma de centrarlo es
+        //setSize(ancho,alto);
+        //setLocationRelativeTo(null);
     }
 }
 
-class probando {
 
-    public static void main(String[] args) {
-        MarcoCentrado marco = new MarcoCentrado();
-        marco.anchoAlto(50, 50);
-        marco.crearFormulario("probando marco centrado");
-    }
-}
