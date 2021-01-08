@@ -13,8 +13,8 @@ public class ConstruyendoMenus {
         MarcoCentrado marco = new MarcoCentrado();
         LaminaMenu lamina = new LaminaMenu();
         marco.add(lamina);
-        marco.anchoAlto(20, 50);
-        marco.crearFormulario("Trabajando con Menus");
+        marco.anchoAlto(30, 50);
+        marco.crearFormulario("Trabagit jando con Menus");
     }
 
 }
