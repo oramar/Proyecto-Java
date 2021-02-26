@@ -9,8 +9,9 @@ public class Laberinto {
     private int columna = 0;
     private final int numeroFila = 26;
     private final int numeroColumna = 46;
-    private final int anchoBloque = 20;
-    private final int altoBloque = 20;
+    private final int anchoBloque = 29;
+    private final int altoBloque = 29;
+    private final int tamano=29;
 
     public void paint(Graphics grafico) {
         int[][] laberinto = obtenerLaberinto();
@@ -18,15 +19,15 @@ public class Laberinto {
             for (columna = 0; columna < numeroColumna; columna++) {
                 if (laberinto[fila][columna] == 1) {
                     grafico.setColor(Color.black);
-                    grafico.fillRect(columna * 20, fila * 20, anchoBloque, altoBloque);
+                    grafico.fillRect(columna * tamano, fila * tamano, anchoBloque, altoBloque);
                     grafico.setColor(Color.WHITE);
-                    grafico.drawRect(columna * 20, fila * 20, anchoBloque, altoBloque);
+                    grafico.drawRect(columna * tamano, fila * tamano, anchoBloque, altoBloque);
 
                 }
 
                 if (laberinto[fila][columna] == 0) {
-                    grafico.setColor(Color.GREEN);
-                    grafico.fillRect(columna * 20, fila * 20, anchoBloque, altoBloque);
+                    grafico.setColor(Color.white);
+                    grafico.fillRect(columna * tamano, fila * tamano, anchoBloque, altoBloque);
 
                 }
             }

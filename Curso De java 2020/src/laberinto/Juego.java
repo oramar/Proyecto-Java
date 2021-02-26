@@ -14,7 +14,7 @@ public class Juego {
         MarcoCentrado marcoLaberinto = new MarcoCentrado();
         LaminaLaberinto lamina = new LaminaLaberinto();
         marcoLaberinto.add(lamina);
-        marcoLaberinto.anchoAlto(68, 72);
+        marcoLaberinto.anchoAlto(100, 100);
         marcoLaberinto.crearFormulario("Mi primer laberinto");
           while(true){
             try {
@@ -35,7 +35,7 @@ class LaminaLaberinto extends JPanel {
 
     public LaminaLaberinto() {
         addKeyListener(new KeyListener() {
-            @Override
+           
             public void keyTyped(KeyEvent ke) {
 
             }
