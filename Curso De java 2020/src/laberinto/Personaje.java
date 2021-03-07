@@ -11,8 +11,8 @@ public class Personaje {
 
     private int x = 30;
     private int y = 30;
-    private final int ancho = 30;
-    private final int alto = 30;
+    private final int ancho = 29;
+    private final int alto = 29;
     private final int movimiento = 29;
     private final int tamano = 29;
     Laberinto lab = new Laberinto();
@@ -23,10 +23,12 @@ public class Personaje {
     }
 
     public void paint(Graphics grafico) {
-        ImageIcon personaje = new ImageIcon(getClass().getResource("/swing/img/LABERINTO.png"));    
+        //ImageIcon personaje = new ImageIcon(getClass().getResource("/swing/img/LABERINTO.png"));    
+        //grafico.drawImage(personaje.getImage(),x, y, ancho, alto,panel);
+        
+        //araña
+        ImageIcon personaje = new ImageIcon(getClass().getResource("/swing/img/Araña.png"));    
         grafico.drawImage(personaje.getImage(),x, y, ancho, alto,panel);
-        
-        
         
         /*grafico.setColor(Color.RED);
         grafico.fillOval(x, y, ancho, alto);
