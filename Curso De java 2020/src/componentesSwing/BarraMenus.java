@@ -70,6 +70,7 @@ class panelAccionBarraMenus extends JPanel {
         barra.add(accionSalir);
         add(barra, BorderLayout.NORTH);
 
+        
         //1. Creamos mapa de entrada
         InputMap mapaEntrada = getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
 
