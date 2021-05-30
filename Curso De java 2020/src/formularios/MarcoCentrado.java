@@ -9,7 +9,15 @@ import javax.swing.JFrame;
 public class MarcoCentrado extends JFrame {
 
     private int ancho;
+
+    public int getAncho() {
+        return ancho;
+    }
     private int alto; 
+
+    public int getAlto() {
+        return alto;
+    }
     private int posicionAncho;
     private int posicionAlto;
     //Con toolkit y el metodo getDefaulToolkit() obtenemos acceso a nuestro sistema huespede
